@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: tmp-shell
+  name: tmp-shell
+  namespace: play
+spec:
+  containers:
+  - image: nicolaka/netshoot
+    name: tmp-shell
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
